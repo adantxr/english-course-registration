@@ -1,0 +1,17 @@
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const fullName = document.getElementById('fullname').value;
+    const telephone = document.getElementById('telephone').value;
+    const level = document.getElementById('level').value;
+
+    // Simulate form submission (e.g., via AJAX to a server)
+    console.log('Form submitted', { fullName, telephone, level });
+
+    // Show success message
+    document.getElementById('successMessage').classList.remove('hidden');
+
+    // Optionally clear form fields
+    document.getElementById('registrationForm').reset();
+});
